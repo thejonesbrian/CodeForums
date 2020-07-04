@@ -9,7 +9,7 @@ namespace CodeForums.Data
     public interface IForum
     {
         Forum GetById(int id);
-        IEnumerable<Forum> GatAll();
+        IEnumerable<Forum> GetAll();
         IEnumerable<ApplicationUser> GetAllActiveUsers();
 
         Task Create(Forum forum);

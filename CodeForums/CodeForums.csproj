@@ -18,4 +18,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CodeForums.Data\CodeForums.Data.csproj" />
+    <ProjectReference Include="..\CodeForums.Service\CodeForums.Service.csproj" />
+  </ItemGroup>
+
 </Project>

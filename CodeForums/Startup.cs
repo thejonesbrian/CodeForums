@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using CodeForums.Models;
 using CodeForums.Services;
 using CodeForums.Data;
+using CodeForums.Service;
 
 namespace CodeForums
 {
@@ -31,7 +32,7 @@ namespace CodeForums
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
+            services.AddScoped<IForum, ForumService>();
             services.AddMvc();
         }
 
