@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <UserSecretsId>aspnet-CodeForums-F157D05B-A087-4C7A-9FF9-99A60145B8A0</UserSecretsId>
+    <UserSecretsId>aspnet-CodeForums-0E88B503-F069-4187-8DBA-D6BE6D661A37</UserSecretsId>
   </PropertyGroup>
 
 
@@ -16,11 +16,6 @@
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.3" />
     <DotNetCliToolReference Include="Microsoft.Extensions.SecretManager.Tools" Version="2.0.2" />
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\CodeForums.Data\CodeForums.Data.csproj" />
-    <ProjectReference Include="..\CodeForums.Service\CodeForums.Service.csproj" />
   </ItemGroup>
 
 </Project>
