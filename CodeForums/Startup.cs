@@ -1,5 +1,6 @@
 ﻿using CodeForums.Data;
 using CodeForums.Models;
+using CodeForums.Service;
 using CodeForums.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -31,7 +32,7 @@ namespace CodeForums
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
-
+            services.AddScoped<IForum, ForumService>();
             services.AddMvc();
         }
 
