@@ -8,7 +8,7 @@ namespace CodeForums.Data
 {
     public interface IPost
     {
-        Post GetById(int Id);
+        Post GetById(int id);
         IEnumerable<Post> GetAll();
         IEnumerable<Post> GetFilteredPosts(string searchString);
         IEnumerable<Post> GetPostsByForum(int id);
