@@ -1,7 +1,8 @@
 ﻿@model CodeForums.Models.Forum.ForumTopicModel
 
-<h1>@Model.Forum.Name Forum.</h1>
+<h1>Welcome! This is the @Model.Forum.Name Forum.</h1>
 
+<span id="hiddenBtn"><a asp-controller="Post" asp-action="Create" asp-route-id=@Model.Forum.Id class="btn btn-default btn-newPost">Create Post</a></span>
 @if (Model.Posts.Any())
 {
     <table class="table table-bordered table-striped">
